@@ -12,7 +12,6 @@ In this situation, the diagonal position is hard to save.
   
 """
 def generate_board(n: int):
-	#
 	if(n == 0):
 		return []
 	ret = []
