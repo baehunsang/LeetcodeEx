@@ -35,7 +35,7 @@ def findOrder(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
 			income_list[adj_node] -= 1
 			if income_list[adj_node] == 0:
 				Q.append(adj_node)
-	if any(graph[key] for key in graph):
+	if any(graph[key] for key in list(graph)):
 		return []
 	return L			
 			
