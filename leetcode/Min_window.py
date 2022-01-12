@@ -5,7 +5,7 @@ def minWindow(s: str, t: str) -> str:
         missing = len(t)
         #exception handling
         l = r = start = end = 0
-        for r, char in enumerate(s):
+        for r, char in enumerate(s, 1):
             missing -= t_count[char] > 0
             t_count[char] -= 1
             
